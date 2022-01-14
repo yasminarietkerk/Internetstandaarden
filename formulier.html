@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blijf op de hoogte</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+       <nav>  
+           <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="recept.html">Recept van de dag</a></li>
+              <li><a href="formulier.html" class="active">Blijf op de hoogte</a></li>
+           </ul>
+       </nav>  
+</header>
+
+<main>    
+   <form action='submitted.html' method='get' class='sign-up'>
+              <p>Wil je op de hoogte blijven van nieuwe recepten? </p> 
+              <p>Schrijf je dan nu in voor de nieuwsbrief:</p>        
+
+    <fieldset>
+        <legend>Geslacht*</legend>
+              <input id="male"
+                     name="gender"
+                     type="radio"
+                     value="e-mail"
+                     checked/>
+              <label for="male">Man</label>
+
+              <input id="female"
+                     name="gender"
+                     type="radio"
+                     value="female">
+              <label for="female">Vrouw</label>
+
+              <input id="private"
+                     name="gender"
+                     type="radio"
+                     value="private">
+        <label for="private">Zeg ik liever niet</label>                   
+    </fieldset>
+
+    <label for="first-name">Voornaam*</label>
+    <input id="first-name" 
+              name="first-name"
+              type="text"
+              required>
+
+     <label for="insertion">Tussenvoegsel</label>
+     <input id="insertion" 
+              name="insertion" 
+              type="text">
+    
+     <label for="last-name">Achternaam*</label>
+     <input id="last-name"
+              name="last-name" 
+              type="text"
+              required>       
+
+     <label for="email">E-mailadres*</label>
+     <input id="email"
+              name="email"
+              type="email"
+              placeholder="joe@example.com"
+              required>
+
+     <label for="birthday">Geboortedatum*</label>
+     <input id="birthday"
+            name="birthday"
+            type="text"
+            placeholder="dd-mm-jjjj"
+            required>
+
+     <input type="submit" value="Aanmelden"> 
+   </form>               
+</main>
+
+
+</body>
+</html>
